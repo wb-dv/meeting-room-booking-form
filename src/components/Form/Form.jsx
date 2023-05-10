@@ -31,8 +31,7 @@ const Form = () => {
   });
 
   const logData = (data) => {
-    // console.log(JSON.stringify(data));
-    console.log(data);
+    console.log(JSON.stringify(data));
     reset();
   };
 
