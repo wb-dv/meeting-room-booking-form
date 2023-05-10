@@ -1,3 +1,4 @@
+import CustomTextarea from '../CustomTextarea/CustomTextarea';
 import Fieldset from '../FieldSet/Fieldset';
 import FloorSelect from '../Select/FloorSelect/FloorSelect';
 import MeetingRoomSelect from '../Select/MeetingRoomSelect/MeetingRoomSelect';
@@ -11,6 +12,7 @@ function SelectsSet() {
       <TowerSelect />
       <FloorSelect />
       <MeetingRoomSelect />
+      <CustomTextarea />
     </Fieldset>
   );
 }

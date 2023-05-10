@@ -45,3 +45,7 @@ body {
   color: var(--light);
 }
 
+abbr[title] {
+  text-decoration: none;
+}
+

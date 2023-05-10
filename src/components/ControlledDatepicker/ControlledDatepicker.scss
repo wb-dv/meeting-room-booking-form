@@ -26,18 +26,6 @@
       background-color: var(--dark_hover);
     }
 
-    &--active {
-      background-color: var(--primary);
-
-      &:enabled:hover {
-        background-color: var(--primary);
-      }
-
-      &:enabled:focus {
-        background-color: var(--primary);
-      }
-    }
-
     &--now {
       background-color: var(--dark_active);
 
@@ -47,6 +35,18 @@
 
       &:enabled:focus {
         background-color: var(--dark_active);
+      }
+    }
+
+    &--active {
+      background-color: var(--primary);
+
+      &:enabled:hover {
+        background-color: var(--primary);
+      }
+
+      &:enabled:focus {
+        background-color: var(--primary);
       }
     }
   }

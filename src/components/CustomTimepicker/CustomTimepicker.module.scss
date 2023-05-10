@@ -1,0 +1,29 @@
+.time_input {
+  padding: 10px 10px 10px 20px;
+  width: 500px;
+  max-width: 120px;
+
+  border-radius: 10px;
+  border: none;
+  background-color: var(--dark);
+
+  color: var(--light);
+  font-size: 18px;
+
+  cursor: text;
+
+  transition: background-color 0.3s, border 0.3s;
+
+  &::-webkit-calendar-picker-indicator {
+    filter: brightness(0) invert(1);
+  }
+
+  &:focus {
+    outline: 1px solid var(--primary);
+  }
+
+  &_error {
+    background-color: var(--error_bg) !important;
+    border: 1px solid var(--error) !important;
+  }
+}
