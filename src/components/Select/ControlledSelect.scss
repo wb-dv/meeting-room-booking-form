@@ -1,0 +1,63 @@
+.static_text {
+  padding-left: 20px;
+}
+
+.controlled-select {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__control {
+    min-height: 50px !important;
+    margin-bottom: 20px !important;
+
+    background-color: var(--dark) !important;
+    border: none !important;
+    border-radius: 10px !important;
+
+    transition: background-color 0.3s, border 0.3s, margin 0.3s;
+  }
+
+  &__input {
+    color: var(--light) !important;
+  }
+
+  &__single-value {
+    color: var(--light) !important;
+  }
+
+  &__value-container {
+    cursor: text !important;
+  }
+
+  &__menu {
+    background-color: var(--dark) !important;
+  }
+
+  &__indicator {
+    cursor: pointer !important;
+  }
+
+  &__option {
+    cursor: pointer !important;
+
+    &--is-focused {
+      background-color: var(--dark_hover) !important;
+    }
+
+    &--is-selected {
+      background-color: var(--primary_dark) !important;
+    }
+  }
+}
+
+.controlled-select_error {
+  .controlled-select {
+    &__control {
+      margin-bottom: 30px !important;
+
+      background-color: var(--error_bg) !important;
+      border: 1px solid var(--error) !important;
+    }
+  }
+}

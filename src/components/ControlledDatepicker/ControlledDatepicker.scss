@@ -1,0 +1,86 @@
+.react-calendar {
+  margin-bottom: 20px;
+  padding: 10px;
+
+  background-color: var(--dark);
+  border: none;
+  border-radius: 10px;
+
+  color: var(--light);
+
+  button {
+    color: var(--light);
+  }
+
+  &__viewContainer {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__tile {
+    &:enabled:hover {
+      background-color: var(--dark_hover);
+    }
+
+    &:enabled:focus {
+      background-color: var(--dark_hover);
+    }
+
+    &--active {
+      background-color: var(--primary);
+
+      &:enabled:hover {
+        background-color: var(--primary);
+      }
+
+      &:enabled:focus {
+        background-color: var(--primary);
+      }
+    }
+
+    &--now {
+      background-color: var(--dark_active);
+
+      &:enabled:hover {
+        background-color: var(--dark_active);
+      }
+
+      &:enabled:focus {
+        background-color: var(--dark_active);
+      }
+    }
+  }
+
+  &__navigation {
+    button:enabled:hover,
+    button:enabled:focus {
+      background-color: var(--dark_hover);
+    }
+
+    &__prev-button {
+      border-radius: 0 10px 10px 0;
+    }
+
+    &__prev2-button {
+      border-radius: 10px 0 0 10px;
+    }
+
+    &__next-button {
+      border-radius: 10px 0 0 10px;
+    }
+
+    &__next2-button {
+      border-radius: 0 10px 10px 0;
+    }
+
+    &__label {
+      border-radius: 10px;
+      margin: 0 5px !important;
+    }
+  }
+
+  button:disabled {
+    background-color: var(--dark_disabled);
+    color: var(--dark_focus);
+  }
+}

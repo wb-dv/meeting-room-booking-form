@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import-normalize;
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--darken) transparent;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*::-webkit-scrollbar {
+  width: 6px; /* ширина scrollbar */
 }
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--darken);
+  border-radius: 20px;
+}
+
+:root {
+  --light: rgb(238, 238, 238);
+
+  --dark: #242424;
+  --dark_hover: #494949;
+  --dark_active: #444444;
+  --dark_focus: #5e5e5e;
+  --dark_disabled: #6b6b6b;
+
+  --darken: #0c0c0c;
+
+  --primary: #0078d4;
+  --primary_hover: #418cc5;
+  --primary_active: #0291fe;
+  --primary_dark: #00213a;
+
+  --error: #fc3939;
+  --error_bg: #270a0a;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--light);
+}
+
