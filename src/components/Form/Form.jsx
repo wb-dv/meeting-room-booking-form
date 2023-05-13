@@ -9,6 +9,18 @@ import { useForm } from 'react-hook-form';
 import ControlButtons from '../ControlButtons/ControlButtons';
 
 const Form = () => {
+  const initialState = {
+    tower: '',
+    floor: '',
+    room: '',
+    date: Date.now(),
+    comment: '',
+    time: {
+      from: '',
+      to: '',
+    },
+  };
+
   const {
     handleSubmit,
     reset,
@@ -17,17 +29,7 @@ const Form = () => {
     formState: { errors },
   } = useForm({
     mode: 'onBlur',
-    defaultValues: {
-      tower: '',
-      floor: '',
-      room: '',
-      date: Date.now(),
-      comment: '',
-      time: {
-        from: '',
-        to: '',
-      },
-    },
+    defaultValues: initialState,
   });
 
   const logData = (data) => {
