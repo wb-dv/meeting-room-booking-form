@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5308aa0.css",
-    "main.js": "/static/js/main.ee74ee1d.js",
-    "static/media/bg_image_1.jpg": "/static/media/bg_image_1.cbfdef35796a651f9a04.jpg",
-    "index.html": "/index.html",
-    "main.a5308aa0.css.map": "/static/css/main.a5308aa0.css.map",
-    "main.ee74ee1d.js.map": "/static/js/main.ee74ee1d.js.map"
+    "main.css": "/meeting-room-booking-form/static/css/main.a5308aa0.css",
+    "main.js": "/meeting-room-booking-form/static/js/main.ee74ee1d.js",
+    "static/media/bg_image_1.jpg": "/meeting-room-booking-form/static/media/bg_image_1.cbfdef35796a651f9a04.jpg",
+    "index.html": "/meeting-room-booking-form/index.html",
+    "main.a5308aa0.css.map": "/meeting-room-booking-form/static/css/main.a5308aa0.css.map",
+    "main.ee74ee1d.js.map": "/meeting-room-booking-form/static/js/main.ee74ee1d.js.map"
   },
   "entrypoints": [
     "static/css/main.a5308aa0.css",
